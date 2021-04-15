@@ -5,6 +5,8 @@ fun <T> swap(arr: Array<T>, from: Int, to: Int): Array<T> {
     return arr
 }
 
+// Heap's algorithm generates all possible permutations of n objects. 
+// https://en.wikipedia.org/wiki/Heap%27s_algorithm
 fun <T> heaps(k: Int, a: Array<T>, block: (Array<T>) -> Unit) {
     var arr = a
     if (k == 1) {
